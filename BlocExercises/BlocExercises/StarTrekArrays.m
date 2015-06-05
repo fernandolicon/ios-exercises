@@ -11,8 +11,25 @@
 @implementation StarTrekArrays
 
 - (NSArray *) arrayOfStarTrekCharactersFromString:(NSString *)characterString {
-    /* WORK HERE */
-    return @[];
+    NSMutableArray *starTrekCharacters = [[NSMutableArray alloc] init];
+    
+    unsigned long len = [characterString length];
+    const char *buffer = [characterString UTF8String];
+    NSMutableString *name = [[NSMutableString alloc] initWithString:@""];
+    
+    for(int i = 0; i < len; ++i) {
+        char current = buffer[i];
+        if (current != ';') {
+            [name appendFormat:@"%c", current];
+        }else{
+            NSString *stringName = [NSString stringWithString:name];
+            [starTrekCharacters addObject:stringName];
+            [name setString:@""];
+        }
+    }
+    [starTrekCharacters addObject:name];
+    
+    return starTrekCharacters;
 }
 
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {
