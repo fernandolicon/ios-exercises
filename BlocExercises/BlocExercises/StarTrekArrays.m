@@ -33,17 +33,34 @@
 }
 
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {
-    /* WORK HERE */
-    return @"";
+    NSMutableString *names = [[NSMutableString alloc] init];
+    int count = 0;
+    for (NSString *name in characterArray){
+        if (count == 0) {
+            [names appendString:name];
+        }else{
+            [names appendFormat:@";%@", name];
+        }
+        count++;
+    }
+    
+    NSString *finalNames = [NSString stringWithString:names];
+    return finalNames;
 }
 
 - (NSArray *) alphabeticallySortedStarTrekCharactersFromArray:(NSArray *)characterArray {
-    /* WORK HERE */
-    return @[];
+    NSArray *sortedArray = [characterArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    return sortedArray;
 }
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
-    /* WORK HERE */
+    for (NSString *text in characterArray) {
+        NSString *lowerCaseText = [text lowercaseString];
+        if ([lowerCaseText containsString:@"worf"]) {
+            return YES;
+        }
+    }
+    
     return NO;
 }
 
