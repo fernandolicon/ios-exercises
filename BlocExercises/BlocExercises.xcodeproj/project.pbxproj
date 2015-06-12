@@ -132,9 +132,7 @@
 				931AB0C81946478E00B4FB76 /* Number Variables */,
 				931AB0CE1946606400B4FB76 /* Strings and String Formatting */,
 				931AB0C21945080300B4FB76 /* If / Else Statements and the Ternary Operator */,
-				17E46D1D1947638D0018BD4C /* Equality */,
 				936964AB1947CE610021C271 /* Loops */,
-				936964A71947C8A50021C271 /* Dictionaries */,
 				936964B31948F7B30021C271 /* Simple Data Types and Objects */,
 				936964BB19496EEC0021C271 /* Properties */,
 				931AB0B71945063500B4FB76 /* Supporting Files */,
@@ -246,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				9369649F1947AF7B0021C271 /* Arrays */,
+				936964A71947C8A50021C271 /* Dictionaries */,
+				17E46D1D1947638D0018BD4C /* Equality */,
 			);
 			name = Done;
 			sourceTree = "<group>";
