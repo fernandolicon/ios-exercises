@@ -129,7 +129,6 @@
 			children = (
 				AFEAFB8D1B2657F40030B6D9 /* Done */,
 				93BDE6AD194A6B3F00F2DE30 /* Unit Testing */,
-				931AB0C81946478E00B4FB76 /* Number Variables */,
 				931AB0CE1946606400B4FB76 /* Strings and String Formatting */,
 				936964B31948F7B30021C271 /* Simple Data Types and Objects */,
 				936964BB19496EEC0021C271 /* Properties */,
@@ -241,6 +240,7 @@
 		AFEAFB8D1B2657F40030B6D9 /* Done */ = {
 			isa = PBXGroup;
 			children = (
+				931AB0C81946478E00B4FB76 /* Number Variables */,
 				936964AB1947CE610021C271 /* Loops */,
 				931AB0C21945080300B4FB76 /* If / Else Statements and the Ternary Operator */,
 				9369649F1947AF7B0021C271 /* Arrays */,
